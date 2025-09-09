@@ -15,25 +15,44 @@
             boundaries.</p>
 
         <h2>Task 1: Swap Block and Inline Elements</h2>
-        <div>In the HTML of this document, change this div element to a span element.</div>
+        <span>In the HTML of this document, change this div element to a span element.</span>
 
         <p class="question">What happens to the layout? Does it still take up the full width?</p>
+        <p class="answer">
+            When I changed the &lt;div&gt; to a &lt;span&gt;, the text no longer takes up the full width.
+            It stays inline with the following text because &lt;div&gt; is block-level and &lt;span&gt; is inline.
+        </p>
 
         <h2>Task 2: Nesting Inline in Block</h2>
-        <p>A paragraph &lt;p&gt; element (block) with a <span>&lt;span&gt; element;</span></p>
-        <p class="question">Add another inline element like &lt;em&gt; or &lt;strong&gt; inside the paragraph. Observe
+        <p>A paragraph &lt;p&gt; element (block) with a <span>&lt;span&gt; element;</span>
+            <em>this part is emphasized</em> and <strong> this part is strong</strong>
+        </p>
+        <p class="question">Add another inline element like &lt;em&gt; or &lt;strong&gt; inside the paragraph.
+            Observe
             how it flows within the line.</p>
 
         <h2>Task3: Nesting Block in Inline</h2>
-        <span>Try placing a &lt;div&gt; inside a &lt;span&gt; element.</span>
-            <p class="question">What error or layout issue do you see? Why does this happen?</p>
+        <span>This is a span <div>This is a div inside span</div></span>
+        <p class="question">What error or layout issue do you see? Why does this happen?</p>
+        <p class="answer">
+            When I placed a &lt;div&gt; inside a &lt;span&gt;, the browser broke the layout.
+            The &lt;div&gt; didn’t stay inside the &lt;span&gt;; instead, the browser automatically closed the
+            &lt;span&gt;
+            before opening the &lt;div&gt;.
+            This happens because a &lt;span&gt; is an inline element, and inline elements are only allowed to contain
+            text or
+            other inline elements.
+            A &lt;div&gt; is a block-level element, and block-level elements cannot be nested inside inline elements
+            according
+            to the HTML specification.
+        </p>
 
-
-            <h2>Task 4: Review the HTML markup of the following Inline Elements</h2>
-        &lt;img&gt; element
-        <img src="images/castle.webp" alt="placeholder image (images are inline)" width="300" height="300">
-        <a href="https://churchofjesuschrist.org">&lt;a&gt; anchor element</a>
-        <button type="button">&lt;button&gt; element</button>
+        <h2>Task 4: Review the HTML markup of the following Inline Elements</h2>
+        <p>&lt;img&gt; element <br>
+            <img src="images/castle.webp" alt="placeholder image (images are inline)" width="300" height="300">
+        </p>
+        <p><a href="https://churchofjesuschrist.org">&lt;a&gt; anchor element</a></p>
+        <p><button type="button">&lt;button&gt; element</button></p>
     </main>
 </body>
 
