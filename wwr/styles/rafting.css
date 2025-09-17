@@ -18,24 +18,18 @@ body {
   color: var(--accent1-color);
 }
 
-header,
-main,
-footer {
+header, main, footer {
   width: 840px;
   margin: 0 auto;
 }
 
-h1,
-h2 {
+h1, h2 {
   font-family: var(--heading-font);
   color: var(--primary-color);
 }
 
 
-nav,
-p,
-section,
-article {
+nav, p, section, article {
   margin: 16px;
   padding: 8px;
 }
@@ -94,7 +88,6 @@ h1 {
   bottom: 20px;
   left: 20px;
   background-color: rgba(255, 255, 255, 0.85);
-  /* fondo semitransparente */
   padding: 16px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
