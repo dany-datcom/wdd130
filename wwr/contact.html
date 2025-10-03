@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Contact Us – Get in touch with White Water Rafting Co. for inquiries, reservations, or suggestions.">
+  <meta name="author" content="Dany Josue Jimenez Gonzalez">
+  <title>Contact Us – White Water Rafting Co.</title>
+  <link rel="stylesheet" href="styles/rafting.css">
+</head>
+
+<body>
+  <header>
+    <img src="images/splash.png" alt="White Water Rafting Logo">
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="trips.html">Trips</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="contact-intro">
+      <h2>Send Us a Message</h2>
+      <div class="contact-info">
+        <p><strong>Address:</strong> 123 Rapids Lane, Adventure City, CO 80123</p>
+        <p><strong>Phone:</strong> (123) 456-7890</p>
+        <p><strong>Email:</strong> info@wwrafting.com</p>
+      </div>
+    </section>
+
+    <section class="contact-container">
+      <div class="left-column">
+        <div class="map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7847.377275762491!2d-84.1109043359756!3d10.446263467968972!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa085a096949a79%3A0x3d9da6d5226e6e06!2sCosta%20Rica%20descents%20Sarapiqui!5e0!3m2!1sen!2scr!4v1759447183312!5m2!1sen!2scr"
+            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+
+      <div class="contact-form">
+        <form action="submit_form.php" method="post">
+          <label for="name">Full Name:</label>
+          <input type="text" id="name" name="name" required>
+
+          <label for="email">Email Address:</label>
+          <input type="email" id="email" name="email" required>
+
+          <fieldset>
+            <legend>Purpose of Message:</legend>
+            <label><input type="radio" name="purpose" value="General Inquiry" required> General Inquiry</label>
+            <label><input type="radio" name="purpose" value="Reservation Question"> Reservation Question</label>
+            <label><input type="radio" name="purpose" value="Website Suggestion"> Website Suggestion</label>
+          </fieldset>
+
+          <label for="message">Your Message:</label>
+          <textarea id="message" name="message" required></textarea>
+
+          <label>
+            <input type="checkbox" name="subscribe"> Please subscribe me to the monthly newsletter
+          </label>
+
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </section>
+
+   
+    <section class="employees">
+      <figure>
+        <img src="images/janesmith.webp" alt="Employee 1">
+        <figcaption>Jane Smith – Operations Manager</figcaption>
+      </figure>
+      <figure>
+        <img src="images/carlosperez.webp" alt="Employee 2">
+        <figcaption>Carlos Perez – Trip Guide</figcaption>
+      </figure>
+      <figure>
+        <img src="images/lindajhonson.webp" alt="Employee 3">
+        <figcaption>Linda Johnson – Customer Service</figcaption>
+      </figure>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 White Water Rafting Co. | Dany Josue Jimenez Gonzalez</p>
+    <nav class="socialmedia">
+      <a href="https://facebook.com"><img src="images/facebook.png" alt="Facebook Icon"></a>
+      <a href="https://linkedin.com"><img src="images/linkedin.png" alt="LinkedIn Icon"></a>
+      <a href="https://instagram.com"><img src="images/instagram.png" alt="Instagram Icon"></a>
+    </nav>
+  </footer>
+</body>
+
+</html>
