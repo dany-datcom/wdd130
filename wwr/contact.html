@@ -9,6 +9,20 @@
   <meta name="author" content="Dany Josue Jimenez Gonzalez">
   <title>Contact Us – White Water Rafting Co.</title>
   <link rel="stylesheet" href="styles/rafting.css">
+  <style>
+    /* Clase para ocultar visualmente el h1 pero mantenerlo accesible */
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
+  </style>
 </head>
 
 <body>
@@ -24,7 +38,9 @@
     </nav>
   </header>
 
-  <main>
+  <main role="main">
+    <!-- H1 oculto para accesibilidad y validación -->
+    <h1 class="sr-only">Contact White Water Rafting Co.</h1>
 
     <section class="contact-intro">
       <h2>Send Us a Message</h2>
@@ -54,24 +70,29 @@
 
           <fieldset>
             <legend>Purpose of Message:</legend>
-            <label><input type="radio" name="purpose" value="General Inquiry" required> General Inquiry</label>
-            <label><input type="radio" name="purpose" value="Reservation Question"> Reservation Question</label>
-            <label><input type="radio" name="purpose" value="Website Suggestion"> Website Suggestion</label>
+
+            <input type="radio" id="general" name="purpose" value="General Inquiry" required>
+            <label for="general">General Inquiry</label>
+
+            <input type="radio" id="reservation" name="purpose" value="Reservation Question">
+            <label for="reservation">Reservation Question</label>
+
+            <input type="radio" id="suggestion" name="purpose" value="Website Suggestion">
+            <label for="suggestion">Website Suggestion</label>
+
           </fieldset>
 
           <label for="message">Your Message:</label>
           <textarea id="message" name="message" required></textarea>
 
-          <label>
-            <input type="checkbox" name="subscribe"> Please subscribe me to the monthly newsletter
-          </label>
+          <input type="checkbox" id="subscribe" name="subscribe">
+          <label for="subscribe">Please subscribe me to the monthly newsletter</label>
 
           <button type="submit">Send Message</button>
         </form>
       </div>
     </section>
 
-   
     <section class="employees">
       <figure>
         <img src="images/janesmith.webp" alt="Employee 1">
